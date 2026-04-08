@@ -1,0 +1,11 @@
+provider "aws" {
+  region = "eu-north-1"
+}
+resource "aws_instance" "web" {
+  ami           = "ami-09c813fb71547fc4f"
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "web_server_test"
+  }
+}
