@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_route53_record" "www" {
-  zone_id = Z01214421PKKTLXAI5VN5
+  zone_id = "Z01214421PKKTLXAI5VN5"
   name    = "test"
   type    = "A"
   ttl     = 300
